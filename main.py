@@ -6,11 +6,7 @@ janela.title("Sistema de Cadastro")
 janela.resizable(width=False, height=False)
 janela._set_appearance_mode("light")
 
-def novatela():
-    novajanela = customtkinter.CTkToplevel(janela,fg_color="teal")
-    novajanela.geometry("500x260")
-    novajanela.attributes("-topmost", True)
-
-btn_novatela = customtkinter.CTkButton(master=janela, text="Abrir nova janela",command=novatela).place(x=300,y=100)
+frame1 = customtkinter.CTkFrame(janela,width=570,height=330).place(x=10,y=30)
+frame2 = customtkinter.CTkFrame(janela,width=180,height=180).place(x=590,y=30)
 
 janela.mainloop()
